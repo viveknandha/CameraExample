@@ -11,8 +11,6 @@ import AVFoundation
 
 class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureFileOutputRecordingDelegate {
     
-  
-    
     @IBOutlet weak var cameraView: UIView!
     
     var movieOutput = AVCaptureMovieFileOutput()
@@ -28,9 +26,6 @@ class ViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDele
         
         cameraSession.addOutput(movieOutput)
         cameraSession.startRunning()
-        
-        
-        
         
 	}
 
