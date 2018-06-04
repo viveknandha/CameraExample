@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CameraExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c6K-nw-AOZ" userLabel="CameraView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="657"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2A-sR-ric">
+                                <rect key="frame" x="168.66666666666666" y="674" width="77" height="42"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Record">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startRecordingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Ue-0j-p9w"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="X2A-sR-ric" secondAttribute="bottom" constant="20" id="Myd-Rz-LsU"/>
+                            <constraint firstItem="c6K-nw-AOZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Pg2-i0-wSs"/>
+                            <constraint firstAttribute="trailing" secondItem="c6K-nw-AOZ" secondAttribute="trailing" id="ajp-xY-7jw"/>
+                            <constraint firstItem="X2A-sR-ric" firstAttribute="top" secondItem="c6K-nw-AOZ" secondAttribute="bottom" constant="17" id="cl2-kc-FND"/>
+                            <constraint firstItem="X2A-sR-ric" firstAttribute="top" secondItem="c6K-nw-AOZ" secondAttribute="bottom" constant="17" id="dwY-iY-DQh"/>
+                            <constraint firstItem="X2A-sR-ric" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lc1-QM-GAh"/>
+                            <constraint firstItem="c6K-nw-AOZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ybJ-X6-eGL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraView" destination="c6K-nw-AOZ" id="x3z-fB-kex"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.884057971014496" y="87.228260869565219"/>
+        </scene>
+    </scenes>
+</document>
